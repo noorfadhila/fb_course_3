@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta tag="web saya keren">
+    <meta keyword="web keren yang pernah ada">
+    <title>Web Saya</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script>
+        function hideVideo() {
+            var element = document.getElementById("videoplayer");
+            element.classList.add("hide");
+        }
+    </script>
+</head>
+<body>
+    <section class="text-center">
+        <nav class="top-menu">
+            <a href="/" >Home</a>
+            <a href="/gallery.html" >Gallery</a>
+            <a href="/register.html" >Register</a>
+        </nav>
+        <h1>HOME</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mqqft2x_Aa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border: solid 3px blue;"></iframe>
+        <h2 id="hello">Hello World!</h2>
+        <h3 style="font-size: 30px;">&#129493;</h3>
+        <audio controls autoplay>
+            <source src="./audio/Omae Wa Mou.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p class="green" style="color: blue">Enter your name here:</p>
+        <form id="submitHello">
+            <div class="row">
+                <input type="text" name="myname" placeholder="Your name">
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div id="videoplayer" class="row" style="margin-top: 20px;">
+            <video width="400" autoplay>
+                <source src="./videos/27421-installing-program.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <button type="button" onclick="hideVideo()">Sembunyikan Video</button>
+        </div>
+    </div>
+    <script src="./js/dialog.js"></script>
+</body>
+</html>

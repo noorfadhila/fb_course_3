@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta tag="web saya keren">
+    <meta keyword="web keren yang pernah ada">
+    <title>Web Saya</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <nav class="top-menu">
+        <a href="/" >Home</a>
+        <a href="/gallery.html" >Gallery</a>
+        <a href="/register.html" >Register</a>
+    </nav>
+    <div class="text-center">
+        <h1>GALLERY</h1>
+        <h2 id="hello">Hello World!</h2>
+        <p class="green">Enter <span class="text-bold">your name</span> here:</p>
+        <form id="submitHello">
+            <div class="row">
+                <input type="text" name="myname" placeholder="Your name">
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div class="row" style="margin-top: 20px;">
+            <svg width="120" height="100">
+                <rect x="10" y="10" rx="10" ry="10" width="80" height="80"
+                style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+            </svg>
+            <img src="./images/flower2.jpeg" alt="flower2" width="100" height="100" />
+            <img src="./images/flower3.jpeg" alt="flower3" width="100" />
+            <img src="./images/flower1.jpeg" alt="flower1" width="100" />
+                
+            
+            <div id="videoplayer" class="row" style="margin-top: 20px;">
+                <video width="400" autoplay>
+                    <source src="./videos/52408-girl-with-flowers.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <button type="button" onclick="hideVideo()">Sembunyikan Video</button>
+        </div>
+    </div>
+    </div>
+    <script src="./js/dialog.js"></script>
+</body>
+</html>
